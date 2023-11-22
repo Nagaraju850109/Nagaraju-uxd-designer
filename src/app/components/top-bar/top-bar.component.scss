@@ -1,0 +1,27 @@
+.top-section {
+  background: #F9F9F9;
+
+  & a {
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: unset;
+  }
+
+  & img.logo {
+    width: 6rem;
+    height: 6rem;
+    flex-shrink: 0;
+  }
+
+  & button.contact-me {
+    width: 8.9375rem;
+    height: 2.6875rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #F24405;
+  }
+}
