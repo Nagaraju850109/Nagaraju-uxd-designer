@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-md-12 col-lg-6">
+        <div>
+            Hey
+            <br/>
+            Let's get in touch
+        </div>
+        <div>
+            I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.
+        </div>
+
+        <div>
+            <h5>Living In:</h5>
+            <p>Highland Ave, Jersey City, New Jersey USA.</p>
+        </div>
+        <div>
+            <h5>Call:</h5>
+            <p>+1(475) 287 6062</p>
+        </div>
+
+    </div>
+
+    <div class="col-md-12 col-lg-6">
+        <form (submit)="onSubmit()" [formGroup]="contactMeForm" class="contact-me-form">
+            <div class="mb-5">
+                <label class="form-label" for="name">Name: </label>
+                <input class="form-control" formControlName="name" id="name" type="text">
+                <div *ngIf="name?.errors?.['required']" class="form-field-required">* Required</div>
+            </div>
+
+            <div class="mb-5">
+                <label class="form-label" for="email">Email: </label>
+                <input class="form-control" email formControlName="email" id="email" required type="email">
+                <div *ngIf="email?.errors?.['required']" class="form-field-required">* Required</div>
+                <div *ngIf="email?.errors?.['email'] || email?.errors?.['pattern']" class="form-field-required">Please Enter Valid Email Address.</div>
+            </div>
+            <div class="mb-5">
+                <label class="form-label" for="subject">Subject: </label>
+                <input class="form-control" formControlName="subject" id="subject" type="text">
+                <div *ngIf="subject?.errors?.['required']" class="form-field-required">* Required</div>
+            </div>
+            <div class="mb-5">
+                <label class="form-label" for="message">Message: </label>
+                <textarea class="form-control" formControlName="message" id="message" rows="3"></textarea>
+                <div *ngIf="message?.errors?.['required']" class="form-field-required">* Required</div>
+            </div>
+            <button [disabled]="!contactMeForm.valid" class="btn btn-lg submit text-white" type="submit">Submit</button>
+        </form>
+
+    </div>
+
+</div>

@@ -1,1 +1,42 @@
 
+.contact-me-form {
+
+  & .form-label {
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  & .form-control {
+    border-left: unset;
+    border-right: unset;
+    border-top: unset;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.50);
+    border-radius: unset;
+  }
+
+  & textarea.form-control {
+    resize: none;
+  }
+
+  & .form-field-required {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  & button.submit {
+    width: 8.9375rem;
+    height: 2.6875rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #F24405;
+  }
+
+}
