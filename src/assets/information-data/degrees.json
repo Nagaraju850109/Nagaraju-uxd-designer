@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "level": "Master's",
+    "in": "Master’s in MA Web and Multimedia Design",
+    "from": "Touro University",
+    "location": "New York City - USA",
+    "tenure": "2023-2024",
+    "grade": "4.0"
+  },
+  {
+    "id": 2,
+    "level": "PGDM",
+    "in": "Game art and Design",
+    "from": "Backstage Pass Institute of Gaming and Technology",
+    "location": "Hyderabad - INDIA",
+    "tenure": "2023-2024",
+    "grade": "90%"
+  },
+  {
+    "id": 3,
+    "level": "Bachelor’s",
+    "in": "B.Sc. Animation Design",
+    "from": "Loyola Academy Degree & PG College, Hyderabad - INDIA.",
+    "location": "Hyderabad - INDIA.",
+    "tenure": "2023-2024",
+    "grade": "81%"
+  }
+]

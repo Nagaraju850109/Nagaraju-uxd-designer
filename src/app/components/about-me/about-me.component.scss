@@ -1,0 +1,246 @@
+.about-me {
+
+  & .know-more-section {
+    & .details {
+      color: #FFF;
+
+      font-family: Montserrat, sans-serif;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  & .my-experiences-section {
+    & title {
+      color: #3E3D3D;
+      text-align: center;
+      font-family: Libre Baskerville, sans-serif;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    & .my-experience {
+
+      &_title {
+        color: #FFF;
+        font-family: Libre Baskerville, sans-serif;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      &_sub-title {
+        color: #231F20;
+
+        font-family: Montserrat, sans-serif;
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      &_tenure {
+        color: #233232;
+
+        font-family: Montserrat, sans-serif;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      &_details {
+        color: rgba(0, 0, 0, 0.80);
+        font-family: Montserrat, sans-serif;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+    }
+  }
+
+
+  & .degree-section {
+    & title {
+      color: #FFF;
+      font-family: Libre Baskerville, sans-serif;
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    & .degree-title {
+      color: #231F20;
+      font-family: Montserrat, sans-serif;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    & .degree-institute {
+      color: rgba(0, 0, 0, 0.75);
+
+      font-family: Montserrat, sans-serif;
+      font-size: 1.875rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+    }
+
+    & .degree-tenure {
+      color: rgba(0, 0, 0, 0.75);
+
+      font-family: Montserrat, sans-serif;
+      font-size: 1.875rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  & .achievements-section {
+    & title {
+      color: #231F20;
+
+      font-family: Montserrat, sans-serif;
+      font-size: 1.875rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    & .details {
+      color: #000;
+
+      font-family: Montserrat, sans-serif;
+      font-size: 1.875rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  & .what-can-I-do-section {
+    & .ability {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      &_title {
+        color: #FFF;
+        font-family: Libre Baskerville, sans-serif;
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      &_details {
+        color: #000;
+        font-family: Montserrat, sans-serif;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+
+    & .experience {
+      border-left-color: white;
+      border-left-width: 2.5px;
+      border-left-style: solid;
+      padding-left: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      &_title {
+        color: #FFF;
+        font-family: Montserrat, sans-serif;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      &_details {
+        color: #000;
+        font-family: Montserrat, sans-serif;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        & ul {
+          margin-left: 1rem;
+        }
+
+      }
+    }
+  }
+
+  & .how-i-do-it {
+    & .the-basic-process {
+      &_title {
+        color: #FFF;
+
+        font-family: Montserrat, sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      &_details {
+        color: rgba(0, 0, 0, 0.75);
+        font-family: Montserrat, sans-serif;
+        font-size: 1.625rem;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 400;
+
+        & b {
+          color: #000;
+          font-family: Montserrat, sans-serif;
+          font-size: 1.625rem;
+          font-style: normal;
+          line-height: normal;
+          font-weight: 600;
+        }
+      }
+
+    }
+    & .process {
+      &_image {
+
+      }
+
+      &_title {
+        color: #FFF;
+        font-family: Montserrat, sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      &_details {
+        color: #000;
+        font-family: Montserrat, sans-serif;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+
+}

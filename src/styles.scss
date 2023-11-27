@@ -1,7 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif !important;
+}
+
+
+a {
+  text-decoration: unset;
+}
+
+.section-divider {
+  width: 100%;
+  padding: 20px 0;
+}
+
+
+.section-title {
+  display: inline-block;
+  & .title {
+    color: #231F20;
+    text-align: end;
+    font-family: Libre Baskerville, sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  & .sub-title {
+    color: #F9F8F8;
+    text-align: end;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &::before {
+      margin-right: 8px;
+      content: url('/assets/images/section-sub-title-prefix.svg');
+      display: inline-block;
+    }
+  }
 }

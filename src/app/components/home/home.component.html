@@ -1,21 +1,23 @@
 <section class="featured-works-container">
-  <div class="title-container">
-
-
+  <div class="d-flex justify-content-center">
+    <div class="section-title">
+      <div class="sub-title">Projects that i have done</div>
+      <div class="title">Featured Work</div>
+    </div>
   </div>
   <div class="row">
     <div class="featured-work col-12 my-5" *ngFor="let work of featuredWorks">
       <div class="row">
-        <div class="col-6 d-flex justify-content-center">
+        <div class="col-sm-12 col-md-6 d-flex justify-content-center">
           <div class="image-container">
             <img src="{{work.imageUrl}}" (error)="work.imageUrl = '/assets/images/coming-soon.jpg'" alt="featured-works-{{work.id}}">
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6 ">
           <div class="details-container mt-5">
-            <span class="title">{{work.title}}</span>
-            <span class="subtitle">{{work.subTitle}}</span>
+            <div class="title">{{work.title}}</div>
+            <div class="subtitle">{{work.subTitle}}</div>
             <div class="designation-container">
               <span class="designation">{{work.jobTitle}}</span> | <span class="tenure">{{work.tenure}}</span>
             </div>
@@ -27,26 +29,34 @@
   </div>
 
   <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-lg view-more">View More</button>
+    <button type="button" class="btn btn-lg view-more" (click)="routeToWork()">View More</button>
   </div>
 
 
 </section>
 
 
-<section class="testimonial-container">
-  <div>
+<section class="testimonial-container p-3">
 
+  <div class="d-flex justify-content-center">
+    <div class="section-title">
+      <div class="sub-title">What people say about me</div>
+      <div class="title">Testimonials</div>
+    </div>
   </div>
 
-  <div class="testimonial" *ngFor="let testimonial of testimonials;">
-    <p class="comments">
-      {{testimonial.comments}}
-    </p>
-    <div class="name">{{testimonial.name}}</div>
-    <div>
-      <span>{{testimonial.position}}</span>
-      <span>{{testimonial.companyName && testimonial.companyName.length > 0 ? ' at ' + testimonial.companyName : ''}}</span>
+  <div class="row g-0">
+    <div class="col-6" *ngFor="let testimonial of testimonials;">
+      <div class="testimonial">
+        <p class="comments">
+          {{testimonial.comments}}
+        </p>
+        <div class="name">{{testimonial.name}}</div>
+        <div class="position">
+          <span>{{testimonial.position}}</span>
+          <span>{{testimonial.companyName && testimonial.companyName.length > 0 ? ' at ' + testimonial.companyName : ''}}</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>

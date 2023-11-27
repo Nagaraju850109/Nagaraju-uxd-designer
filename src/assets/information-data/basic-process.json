@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Research & Understand",
+    "details": "This phase involves deep learning to grasp the problems users face, and it's a comprehensive team effort. The team includes people from various areas like product, business, developers, and data analysts",
+    "imageUrl": "/assets/images/about-me/basic-process/1.svg"
+  },
+  {
+    "id": 2,
+    "title": "Sketch & Wireframe",
+    "details": "This phase involves deep learning to grasp the problems users face, and it's a comprehensive team effort. The team includes people from various areas like product, business, developers, and data analysts",
+    "imageUrl": "/assets/images/about-me/basic-process/2.svg"
+  },
+  {
+    "id": 3,
+    "title": "Associate Graphic Designer.",
+    "details": "We pick the best ideas to turn into prototypes by carefully evaluating and ranking them.",
+    "imageUrl": "/assets/images/about-me/basic-process/3.svg"
+  },
+  {
+    "id": 4,
+    "title": "Prototype",
+    "details": "We create a prototype, which is a quick and cost-effective way to experiment and test the ideas we came up with during the sketching phase.",
+    "imageUrl": "/assets/images/about-me/basic-process/4.svg"
+  },
+  {
+    "id": 5,
+    "title": "Test & Validate",
+    "details": "Now, it's time to have real users interact with the prototypes. We watch how they use it, listen to their feedback, and make sure our solution works.",
+    "imageUrl": "/assets/images/about-me/basic-process/5.svg"
+  },
+  {
+    "id": 6,
+    "title": "Reiterate & Start Development",
+    "details": "After reviewing what we've learned and making necessary adjustments, we discuss what comes next in the project. We also support the developers as they bring the project to life, and we're ready to start the process again for the next round.",
+    "imageUrl": "/assets/images/about-me/basic-process/6.svg"
+  }
+]
