@@ -35,9 +35,8 @@ export class ContactMeComponent {
     }
 
     onSubmit = () => {
-        console.warn(this.contactMeForm.value);
+        const subject: string = 'Connect from ' + this.name?.value;
+        const message: string = 'Hi Nagaraju, \n\nEmail : ' + this.email?.value + '\n\nSubject : ' + this.subject?.value + '\r\nMessage : ' + this.message?.value + '\n\nRegards,\n' + this.name?.value;
+        window.location.href = 'mailto:ShalinPatel@gmail.com?subject=' + encodeURI(subject) + '&body=' + encodeURI(message);
     }
-
-
-
 }
