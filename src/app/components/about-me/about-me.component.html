@@ -1,9 +1,9 @@
 <div class="px-4 about-me" style="background: #8BC9C7;">
-    <section class="px-4 know-more-section">
+    <section class="px-4 know-more-section pb-lg-5 pb-sm-3">
 
         <div class="d-flex justify-content-center">
-            <div class="section-title">
-                <div class="sub-title">Want to know</div>
+            <div class="section-title pt-lg-5 pt-sm-4 pb-lg-5 pb-sm-3">
+                <div class="sub-title pb-3">Want to know</div>
                 <div class="title">About Me</div>
             </div>
         </div>
@@ -32,18 +32,18 @@
 
     <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
 
-    <section class="px-4 my-experiences-section">
+    <section class="px-4 my-experiences-section pt-lg-5 pt-sm-3 pb-5 pb-sm-3">
         <div class="section-title">
             <div class="sub-title">Some Facts and who I am</div>
             <div class="title">My Experience</div>
         </div>
 
-        <div class="row g-0 mt-5">
-            <div class="col-12 my-experience" *ngFor="let bean of experiences">
+        <div class="row g-0 mt-lg-5 mt-sm-4">
+            <div class="col-12 my-experience pt-lg-3 pt-sm-1" *ngFor="let bean of experiences">
                 <div class="my-experience_title">{{bean.title}}</div>
                 <div class="my-experience_sub-title">{{bean.subTitle}}</div>
                 <div class="my-experience_tenure">( {{bean.tenure}} )</div>
-                <ol class="my-experience_details mt-2">
+                <ol class="my-experience_details mt-top-4 mt-sm-2 mb-bottom-4 mb-sm-3">
                     <li *ngFor="let detail of bean.details">
                         {{detail}}
                     </li>
@@ -51,11 +51,11 @@
             </div>
         </div>
     </section>
-    <section class="px-4 degree-section">
-        <div class="text-white">Degrees and Achievements:</div>
+    <section class="px-lg-5 px-sm-2 degree-section">
+        <h2 class="text-white">Degrees and Achievements:</h2>
         <div class="row g-0">
-            <div class="col-12 mt-3" *ngFor="let bean of degrees">
-                <div class="degree-title">
+            <div class="col-12 mt-lg-4 mt-sm-2" *ngFor="let bean of degrees">
+                <div class="degree-title pb-lg-2 pb-sm-1">
                     {{bean.level}} in <span class="text-white">{{bean.in}}</span>
                 </div>
                 <div class="degree-institute">
@@ -67,8 +67,8 @@
             </div>
         </div>
     </section>
-    <section class="px-4 pt-4 achievements-section">
-        <div>Achievements</div>
+    <section class="px-4 py-lg-5 py-sm-3  achievements-section">
+        <div class="title">Achievements</div>
         <div class="details">
             <ul>
                 <li>Sports- I been titled District level player in Kabaddi.</li>
@@ -77,14 +77,14 @@
         </div>
     </section>
     <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
-    <section class="px-4 what-can-I-do-section">
+    <section class="px-lg-4 px-sm-0 what-can-I-do-section py-lg-5 py-sm-3">
 
         <div class="section-title">
             <div class="sub-title">Secrets I have up my sleeve</div>
             <div class="title">What Can I do</div>
         </div>
-
-        <div class="row">
+        <div class="what_can_row_main">
+          <div class="row">
             <div class="col-md-12 col-lg-8">
                 <div class="ability">
                     <div class="ability_title">Understanding What Users Want :</div>
@@ -94,7 +94,7 @@
             <div class="col-md-12 col-lg-4">
                 <div class="experience">
                     <div class="experience_title">Design Tools:</div>
-                    <div class="experience_details">
+                    <div class="experience_details mt-lg-4 mt-sm-2">
                         <ul>
                             <li>Figma</li>
                             <li>Adobe Creative Cloud</li>
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+          <div class="row">
             <div class="col-md-12 col-lg-8">
                 <div class="ability">
                     <div class="ability_title">Making Interfaces Easy to Use:</div>
@@ -117,7 +117,7 @@
             <div class="col-md-12 col-lg-4">
                 <div class="experience">
                     <div class="experience_title">Experience:</div>
-                    <div class="experience_details">
+                    <div class="experience_details mt-lg-4 mt-sm-2">
                         <ul>
                             <li>User Interviews</li>
                             <li>Usability Testing</li>
@@ -134,7 +134,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+          <div class="row">
             <div class="col-md-12 col-lg-8">
                 <div class="ability">
                     <div class="ability_title">Going the Extra Mile:</div>
@@ -154,9 +154,10 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
     <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
-    <section class="px-4 how-i-do-it">
+    <section class="px-lg-4 px-sm-0 how-i-do-it py-lg-5 py-sm-2">
 
         <div></div>
         <div class="section-title">
@@ -165,26 +166,26 @@
         </div>
 
 
-        <div class="the-basic-process px-5">
-            <div class="the-basic-process_title">How Might We..?</div>
-            <div class="the-basic-process_details">
+        <div class="the-basic-process">
+            <div class="the-basic-process_title pt-lg-4 pb-lg- py-sm-3 ">How Might We..?</div>
+            <div class="the-basic-process_details ">
                 When I begin a project, I use a process called <b>Design Thinking.</b> It involves understanding <b>people's needs</b> and using creative thinking to <b>solve their problems.</b> The goal is to come up with a <b>prototype</b> (a simplified version of the final product) that helps us
                 figure out <b>what needs to be improved,</b> make sure the way users will <b>interact with it makes sense,</b> and guide our <b>future work on the project.</b>
             </div>
 
-            <div class="the-basic-process_title">The basic process</div>
+            <div class="the-basic-process_title pt-lg-4 pb-lg- py-sm-3">The basic process</div>
             <div class="the-basic-process_details">
                 I can user a variety of methodologies but, the most common process helps me <b>create solutions</b> through <b>rapid prototyping and user testing.</b> It’s divided into <b>six steps</b> to reach <b>clearly defined goals and deliverables</b> and <b>gain critical learnings,
                 quickly.</b>
             </div>
         </div>
         <div class="row process">
-            <div class="col-md-12 col-lg-6" *ngFor="let process of basicProcess">
-                <div class="row py-3">
-                    <div class="col-4 process_image">
+            <div class="col-sm-12 col-md-6 col-lg-6" *ngFor="let process of basicProcess">
+                <div class="row py-lg-4 py-sm-4">
+                    <div class="col-lg-4 col-sm-12 process_image">
                         <img style="width: 11.25rem;height: 11.25rem;flex-shrink: 0;" src="{{process.imageUrl}}" (error)="process.imageUrl = '/assets/images/coming-soon.jpg'" alt="featured-works-{{process.id}}">
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 col-sm-12">
                         <div class="process_title">{{process.id}} - {{process.title}}</div>
                         <div class="process_details">{{process.details}}</div>
                     </div>
@@ -193,3 +194,5 @@
         </div>
     </section>
 </div>
+
+

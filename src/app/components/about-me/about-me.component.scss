@@ -5,11 +5,16 @@
       color: #FFF;
 
       font-family: Montserrat, sans-serif;
-      font-size: 1.25rem;
+      font-size: 20px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+
+      & p {
+        margin-bottom: 20px;
+      }
     }
+
   }
 
   & .my-experiences-section {
@@ -28,7 +33,7 @@
       &_title {
         color: #FFF;
         font-family: Libre Baskerville, sans-serif;
-        font-size: 2.5rem;
+        font-size: 40px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -38,7 +43,7 @@
         color: #231F20;
 
         font-family: Montserrat, sans-serif;
-        font-size: 2.25rem;
+        font-size: 36px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -48,16 +53,16 @@
         color: #233232;
 
         font-family: Montserrat, sans-serif;
-        font-size: 0.875rem;
+        font-size: 14px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
       }
 
-      &_details {
+      &_details li {
         color: rgba(0, 0, 0, 0.80);
         font-family: Montserrat, sans-serif;
-        font-size: 1.25rem;
+        font-size: 20px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -80,7 +85,15 @@
     & .degree-title {
       color: #231F20;
       font-family: Montserrat, sans-serif;
-      font-size: 2rem;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    & h2.text-white {
+      font-family: Libre Baskerville, sans-serif;
+      font-size: 40px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -90,7 +103,7 @@
       color: rgba(0, 0, 0, 0.75);
 
       font-family: Montserrat, sans-serif;
-      font-size: 1.875rem;
+      font-size: 30px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
@@ -101,7 +114,7 @@
       color: rgba(0, 0, 0, 0.75);
 
       font-family: Montserrat, sans-serif;
-      font-size: 1.875rem;
+      font-size: 30px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
@@ -109,21 +122,20 @@
   }
 
   & .achievements-section {
-    & title {
+    & .title {
       color: #231F20;
-
       font-family: Montserrat, sans-serif;
-      font-size: 1.875rem;
+      font-size: 30px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      padding-bottom: 10px;
     }
 
     & .details {
       color: #000;
-
       font-family: Montserrat, sans-serif;
-      font-size: 1.875rem;
+      font-size: 30px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
@@ -134,24 +146,30 @@
     & .ability {
       margin-top: 1rem;
       margin-bottom: 1rem;
+      padding-right: 34px;
 
       &_title {
         color: #FFF;
         font-family: Libre Baskerville, sans-serif;
-        font-size: 2.25rem;
+        font-size: 36px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        padding-bottom: 10px;
       }
 
       &_details {
         color: #000;
         font-family: Montserrat, sans-serif;
-        font-size: 1.75rem;
+        font-size: 28px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
       }
+    }
+
+    .what_can_row_main {
+      padding: 50px 46px 0;
     }
 
     & .experience {
@@ -165,7 +183,7 @@
       &_title {
         color: #FFF;
         font-family: Montserrat, sans-serif;
-        font-size: 1.75rem;
+        font-size: 28px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -181,6 +199,15 @@
 
         & ul {
           margin-left: 1rem;
+
+          & li {
+            color: #000;
+            font-family: Montserrat, sans-serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 35px;
+          }
         }
 
       }
@@ -192,8 +219,8 @@
       &_title {
         color: #FFF;
 
-        font-family: Montserrat, sans-serif;
-        font-size: 2rem;
+        font-family: Monthe-basic-processtserrat, sans-serif;
+        font-size: 30px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -202,7 +229,7 @@
       &_details {
         color: rgba(0, 0, 0, 0.75);
         font-family: Montserrat, sans-serif;
-        font-size: 1.625rem;
+        font-size: 26px;
         font-style: normal;
         line-height: normal;
         font-weight: 400;
@@ -218,15 +245,16 @@
       }
 
     }
+    & .the-basic-process { padding:0 34px 40px; }
     & .process {
-      &_image {
-
+      &_image img {
+        width: 100% !important;
       }
 
       &_title {
         color: #FFF;
         font-family: Montserrat, sans-serif;
-        font-size: 2rem;
+        font-size: 32px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -244,3 +272,124 @@
   }
 
 }
+
+
+
+/* responsive*/
+@media(max-width: 1376px){
+    .about-me {
+      .how-i-do-it {
+        .process_title { font-size: 28px;
+        }
+      }
+    }
+}
+@media(max-width: 1070px){
+    .about-me {
+      & .my-experiences-section {
+        & .my-experience_title {
+          font-size: 32px;
+         }
+        & .my-experience_sub-title { font-size: 30px; }
+      }
+      & .degree-section {
+        & .degree-institute {
+          font-size: 20px;
+        }
+      }
+      & .achievements-section {
+        & .details {
+          font-size: 25px;
+        }
+      }
+      & .what-can-I-do-section {
+        & .what_can_row_main {
+          padding: 40px 34px 0;
+        }
+        & .ability_details{ font-size: 25px; }
+          & .experience_details {
+            & ul {
+              & li
+              {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+
+}
+
+@media(max-width: 1024px){
+   .about-me {
+      & .degree-section {
+      & .degree-title {
+        font-size: 30px;
+      }
+      & .degree-institute {
+        font-size: 17px;
+      }
+    }
+    }
+}
+@media (max-width: 767px){
+  .about-me {
+    & .know-more-section {
+      & .details { font-size: 16px; }
+    }
+    & .my-experiences-section {
+      & .my-experience_details {
+        & li{ font-size: 16px;}
+      }
+      & .my-experience_sub-title {
+        font-size: 25px;
+      }
+    }
+    & .degree-section {
+      & h2.text-white {
+        font-size: 34px;
+      }
+      & .degree-title {
+        font-size: 22px;
+        & span { display: block}
+      }
+     & .degree-institute{ font-size: 18px; }
+     & .degree-tenure {font-size: 16px; }
+    }
+    & .achievements-section {
+     & .title {
+       font-size: 22px;
+     }
+     & .details { font-size: 16px; }
+   }
+    & .what-can-I-do-section {
+      & .what_can_row_main { padding: 20px 0 }
+      & .ability_title { font-size: 22px; }
+      & .ability_details { font-size: 16px; }
+      & .experience_title { font-size: 22px; }
+      & .experience_details {
+        & ul { margin-left: 0;
+          & li { font-size: 16px; line-height: 25px; }
+        }
+      }
+    }
+    & .how-i-do-it {
+      & .the-basic-process_title{
+        font-size: 28px; margin: 20px 0;
+      }
+      & .the-basic-process { padding:0 0 20px; }
+      & .the-basic-process_details {
+        font-size: 16px;
+        & b { font-size: 16px; }
+
+      }
+      & .process_title { font-size: 22px; }
+      & .process_details { font-size: 16px; }
+    }
+  }
+}
+
+
+
+
+
