@@ -1,9 +1,19 @@
+<section class="work_banner text-center">
+  <div class="container-lg">
+    <div class="work_banner_txt section-title">
+      <div class="sub-title pb-3">Projects that i have done</div>
+      <h2>Featured Work</h2>
+    </div>
+    <div class="work_title_border">
+      <img  src="/assets/images/divider.svg" alt="divider" class="section-divider">
+    </div>
+  </div>
+</section>
 <section class="work-section">
-    <hr/>
-
+  <div class="container-lg">
     <div>
 
-        <div class="button-switch my-3">
+        <div class="button-switch my-3 text-center">
             <a href="/work?tab=case-studies">
                 <div [ngClass]="['switch-option', workActiveId==='case-studies'?'active': '']" (click)="workSwitch.select('case-studies')">
                     Case Studies
@@ -21,12 +31,12 @@
                 <li ngbNavItem="case-studies">
                     <ng-template ngbNavContent>
                         <div class="row case-studies">
-                            <div class="col-sm-12 col-md-6 col-lg-4 my-5" *ngFor="let caseStudy of caseStudiesData">
+                            <div class="col-sm-12 col-md-6 col-lg-4 my-4" *ngFor="let caseStudy of caseStudiesData">
                                 <div class="image-container d-inline-block">
                                     <img src="{{caseStudy.imageUrl}}" (error)="caseStudy.imageUrl = '/assets/images/coming-soon.jpg'" alt="case-studies-{{caseStudy.id}}"/>
                                 </div>
-                                <div>
-                                    <div>{{caseStudy.title}}</div>
+                                <div class="case_title_txt">
+                                    <h6>{{caseStudy.title}}</h6>
                                     <div>
                                         <span>{{caseStudy.subTitle}}</span> | <span>{{caseStudy.tenure}}</span>
                                     </div>
@@ -49,5 +59,53 @@
             </ul>
         </div>
     </div>
+    <div>
 
+        <div class="button-switch my-3 text-center">
+            <a href="/work?tab=case-studies">
+                <div [ngClass]="['switch-option', workActiveId==='case-studies'?'active': '']" (click)="workSwitch.select('case-studies')">
+                    Case Studies
+                </div>
+            </a>
+            <a href="/work?tab=gallery">
+                <div [ngClass]="['switch-option', workActiveId==='gallery'?'active': '']" (click)="workSwitch.select('gallery')">
+                    Gallery
+                </div>
+            </a>
+        </div>
+
+        <div [ngbNavOutlet]="workSwitch" class="button-switch-data-container mt-2">
+            <ul ngbNav #workSwitch="ngbNav" [(activeId)]="workActiveId" class="nav-tabs">
+                <li ngbNavItem="case-studies">
+                    <ng-template ngbNavContent>
+                        <div class="row case-studies">
+                            <div class="col-sm-12 col-md-6 col-lg-4 my-4" *ngFor="let caseStudy of caseStudiesData">
+                                <div class="image-container d-inline-block">
+                                    <img src="{{caseStudy.imageUrl}}" (error)="caseStudy.imageUrl = '/assets/images/coming-soon.jpg'" alt="case-studies-{{caseStudy.id}}"/>
+                                </div>
+                                <div class="case_title_txt">
+                                    <h6>{{caseStudy.title}}</h6>
+                                    <div>
+                                        <span>{{caseStudy.subTitle}}</span> | <span>{{caseStudy.tenure}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </li>
+                <li ngbNavItem="gallery">
+                    <ng-template ngbNavContent>
+                        <div class="row gallery-data">
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center my-5" *ngFor="let bean of galleryData">
+                                <div>
+                                    <img src="{{bean.imageUrl}}" (error)="bean.imageUrl = '/assets/images/coming-soon.jpg'" alt="gallery-{{bean.id}}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
 </section>

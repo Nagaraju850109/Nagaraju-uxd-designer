@@ -1,10 +1,46 @@
-
+.contact_page { padding: 80px 0;
+  & h2 {
+    color: #F28705;
+    font-family: Libre Baskerville, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  & .cont_title_txt {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Montserrat, sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 30px 0 ;
+  }
+  & .cont_title_Cnt_bx {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Montserrat,sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin:30px 0 50px;
+    & h5 {
+      color: #000;
+      font-family: Montserrat,sans-serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
+  }
+}
 .contact-me-form {
 
   & .form-label {
     color: #000;
     font-family: Montserrat, sans-serif;
-    font-size: 1.625rem;
+    font-size: 26px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -25,18 +61,92 @@
   & .form-field-required {
     color: rgba(0, 0, 0, 0.50);
     font-family: Montserrat, sans-serif;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
 
   & button.submit {
-    width: 8.9375rem;
-    height: 2.6875rem;
+    width:120px;
+    height: 50px;
     flex-shrink: 0;
     border-radius: 0.625rem;
-    background: #F24405;
+       opacity: 1;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    line-height: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.35s;
+
+    &:before,  &:after {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      transition: all 0.3s;
+      content: "";
+
+    }
+    &::after {
+      width: 0;
+      left: 50%;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      transform: translate(-50%, 0);
+      z-index: 1;
+
+    }
+    &::before {
+      width: 100%;
+      left: 0;
+      border-radius: 5px;
+      background-color: #F24405;
+      z-index: -1;
+
+    }
+    &:hover {
+      color: #F24405 !important;
+
+      &::before{ transform: scale(0, 1);}
+      &:after {
+        width: 100%;
+        border-color: #F24405;
+        transition-delay: 0.2s;
+      }
+
+
+    }
+
   }
 
+}
+
+@media(max-width:991px){
+  .contact_page {
+    padding:50px 0;
+    & h2 { font-size: 40px; }
+    & .cont_title_txt { font-size: 20px; }
+    & .contact-me-form { margin-top: 30px; }
+  }
+}
+
+@media(max-width: 767px){
+  .contact_page {
+    & h2{
+      font-size: 30px;
+    }
+    & .cont_title_txt { padding: 20px 0}
+    & .cont_title_Cnt_bx {
+      font-size: 20px; margin: 10px 0 30px;
+      & h5 { font-size:28px; margin-bottom: 5px; }
+    }
+    & .contact-me-form {
+      & .form-label{
+        font-size: 20px;
+      }
+    }
+  }
 }

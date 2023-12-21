@@ -1,48 +1,50 @@
 <section class="top-section">
-    <div class="d-none d-sm-none d-md-none d-lg-block">
-        <div class="row d-flex justify-content-center align-items-center gx-0">
-            <div class="col-6">
-                <a class="ps-5" href=""><img alt="BBR" class="logo" src="assets/images/logo.png"></a>
-            </div>
-            <div class="col-3">
-                <div class="row">
-                    <div class="col-4 d-flex justify-content-center"><a class="pe-5" href="/about">About</a></div>
-                    <div class="col-4 d-flex justify-content-center"><a class="pe-5" href="/work">Work</a></div>
-                    <div class="col-4 d-flex justify-content-center"><a href="assets/Nagaraju-Resume.pdf" target="_blank">Resume</a></div>
-                </div>
-            </div>
-            <div class="col-3 d-flex justify-content-center">
-                <a class="btn btn-lg contact-me" href="/contact-me" role="button">Contact</a>
-            </div>
-        </div>
-    </div>
+  <div class="container-lg">
+      <div class="d-none d-sm-none d-md-none d-lg-block">
+          <div class="row d-flex justify-content-center align-items-center gx-0">
+              <div class="col-6">
+                  <a class="ps-5" href=""><img alt="BBR" class="logo" src="assets/images/logo.png"></a>
+              </div>
+              <div class="col-3">
+                  <div class="row">
+                      <div class="col-4 d-flex justify-content-center"><a class="pe-5" href="/about">About</a></div>
+                      <div class="col-4 d-flex justify-content-center"><a class="pe-5" href="/work">Work</a></div>
+                      <div class="col-4 d-flex justify-content-center"><a href="assets/Nagaraju-Resume.pdf" target="_blank">Resume</a></div>
+                  </div>
+              </div>
+              <div class="col-3 d-flex justify-content-center">
+                  <a class="btn btn-lg contact-me" href="/contact-me" role="button">Contact</a>
+              </div>
+          </div>
+      </div>
 
-    <div class="d-block d-sm-block d-md-block d-lg-none">
-        <div class="row d-flex justify-content-center align-items-center gx-0">
-            <div class="col-6">
-                <a class="ps-5" href=""><img alt="BBR" class="logo" src="assets/images/logo.png"></a>
-            </div>
-            <div class="col-6 d-flex justify-content-end">
-                <img (click)="openEnd(side_content)" alt="BBR" height="35" src="assets/images/menu-bar.svg" width="35">
-            </div>
-        </div>
-    </div>
+      <div class="d-block d-sm-block d-md-block d-lg-none">
+          <div class="row d-flex justify-content-center align-items-center gx-0">
+              <div class="col-6">
+                  <a class="ps-5" href=""><img alt="BBR" class="logo" src="assets/images/logo.png"></a>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                  <img (click)="openEnd(side_content)" alt="BBR" height="35" src="assets/images/menu-bar.svg" width="35">
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
 
-</section>
 
+  <ng-template #side_content let-offcanvas>
+      <div class="offcanvas-header">
+          <h4 class="offcanvas-title">Menu</h4>
+          <button (click)="offcanvas.dismiss('Cross click')" aria-label="Close" class="btn-close" type="button"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div class="row">
+              <div class="col-12 mobi_menu_list"><a class="pe-5" href="/">Home</a></div>
+              <div class="col-12  mobi_menu_list"><a class="pe-5" href="/about">About</a></div>
+              <div class="col-12  mobi_menu_list"><a class="pe-5" href="/work">Work</a></div>
+              <div class="col-12 mobi_menu_list"><a href="assets/Nagaraju-Resume.pdf" target="_blank">Resume</a></div>
+              <div class="col-12  mobi_menu_list"><a class="pe-5" href="/contact-me">Contact</a></div>
+          </div>
+      </div>
+  </ng-template>
 
-<ng-template #side_content let-offcanvas>
-    <div class="offcanvas-header">
-        <h4 class="offcanvas-title">Menu</h4>
-        <button (click)="offcanvas.dismiss('Cross click')" aria-label="Close" class="btn-close" type="button"></button>
-    </div>
-    <div class="offcanvas-body">
-        <div class="row">
-            <div class="col-12 my-3"><a class="pe-5" href="/">Home</a></div>
-            <div class="col-12 my-3"><a class="pe-5" href="/about">About</a></div>
-            <div class="col-12 my-3"><a class="pe-5" href="/work">Work</a></div>
-            <div class="col-12 my-3"><a href="assets/Nagaraju-Resume.pdf" target="_blank">Resume</a></div>
-            <div class="col-12 my-3"><a class="pe-5" href="/contact-me">Contact</a></div>
-        </div>
-    </div>
-</ng-template>

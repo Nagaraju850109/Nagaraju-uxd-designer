@@ -1,198 +1,217 @@
 <div class="px-4 about-me" style="background: #8BC9C7;">
-    <section class="px-4 know-more-section pb-lg-5 pb-sm-3">
 
-        <div class="d-flex justify-content-center">
-            <div class="section-title pt-lg-5 pt-sm-4 pb-lg-5 pb-sm-3">
-                <div class="sub-title pb-3">Want to know</div>
-                <div class="title">About Me</div>
-            </div>
+  <section class="px-4 know-more-section pb-lg-5 pb-sm-3">
+    <div class="container-lg">
+      <div class="d-flex justify-content-center">
+        <div class="section-title pt-lg-5 pt-sm-4 pb-lg-5 pb-sm-3">
+          <div class="sub-title pb-3">Want to know</div>
+          <div class="title">About Me</div>
         </div>
-        <div class="row g-0">
-            <div class="col-sm-12 col-md-12 col-lg-8 details">
-                <p>Hi. I'm Nagaraju Uppala, an Indian UI/UX & Package designer. Little angry man, but not on the other hand. Always thinking about new things and fashion. A person's attitude will not help them, but their sedition and ideas will. To learn new things, I always follow some great
-                    people,
-                    artists, and blogs. My parents are my biggest supporters, but my grandfather is my world, and he is no longer with us. I enjoy Sharing my knowledge to my friends and grabe from them. I always delegate my work to others and solicit their feedback because only I will know what
-                    mistakes
-                    I made. so that I can improve my abilities.</p>
+      </div>
+      <div class="row g-0">
+        <div class="col-sm-12 col-md-12 col-lg-8 details">
+          <p>Hi. I'm Nagaraju Uppala, an Indian UI/UX & Package designer. Little angry man, but not on the other hand. Always thinking about new things and fashion. A person's attitude will not help them, but their
+            sedition and ideas will. To learn new things, I always follow some great
+            people,
+            artists, and blogs. My parents are my biggest supporters, but my grandfather is my world, and he is no longer with us. I enjoy Sharing my knowledge to my friends and grabe from them. I always delegate my work
+            to others and solicit their feedback because only I will know what
+            mistakes
+            I made. so that I can improve my abilities.</p>
 
-                <p>Working with people and organizations motivates me the most as a graphic designer. In addition, during my two years of work, I've been in charge of generating social media posters, scrips storyboards, concept artworks, product design, Ui/Ux development, product shoot ideas for
-                    brand
-                    development, newsletters, and video editing.</p>
+          <p>Working with people and organizations motivates me the most as a graphic designer. In addition, during my two years of work, I've been in charge of generating social media posters, scrips storyboards,
+            concept artworks, product design, Ui/Ux development, product shoot ideas for
+            brand
+            development, newsletters, and video editing.</p>
 
-                <p>Moreover I enjoy spending time with friends over a good cup of tea and watching movies and television shows. My hobbies include playing video games, chess, Kabaddi, and cricket. While traveling, I prefer Melody Tunes, but when I'm in the mood for a party, I prefer mass songs.
-                    Moreover i love taking photographs of nature. In addition, I enjoy cooking and serving my friends.</p>
+          <p>Moreover I enjoy spending time with friends over a good cup of tea and watching movies and television shows. My hobbies include playing video games, chess, Kabaddi, and cricket. While traveling, I prefer
+            Melody Tunes, but when I'm in the mood for a party, I prefer mass songs.
+            Moreover i love taking photographs of nature. In addition, I enjoy cooking and serving my friends.</p>
 
-                <p>Always make something new.</p>
+          <p>Always make something new.</p>
 
-                <p>Art. Food. Whatever. Enjoy the Beauty of it.</p>
-            </div>
-
+          <p>Art. Food. Whatever. Enjoy the Beauty of it.</p>
         </div>
-    </section>
 
-    <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
+      </div>
+    </div>
+  </section>
 
+  <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
+  <div class="container-lg">
     <section class="px-4 my-experiences-section pt-lg-5 pt-sm-3 pb-5 pb-sm-3">
-        <div class="section-title">
-            <div class="sub-title">Some Facts and who I am</div>
-            <div class="title">My Experience</div>
-        </div>
 
-        <div class="row g-0 mt-lg-5 mt-sm-4">
-            <div class="col-12 my-experience pt-lg-3 pt-sm-1" *ngFor="let bean of experiences">
-                <div class="my-experience_title">{{bean.title}}</div>
-                <div class="my-experience_sub-title">{{bean.subTitle}}</div>
-                <div class="my-experience_tenure">( {{bean.tenure}} )</div>
-                <ol class="my-experience_details mt-top-4 mt-sm-2 mb-bottom-4 mb-sm-3">
-                    <li *ngFor="let detail of bean.details">
-                        {{detail}}
-                    </li>
-                </ol>
-            </div>
+      <div class="section-title">
+        <div class="sub-title">Some Facts and who I am</div>
+        <div class="title">My Experience</div>
+      </div>
+
+      <div class="row g-0 mt-lg-5 mt-sm-4">
+        <div class="col-12 my-experience pt-lg-3 pt-sm-1" *ngFor="let bean of experiences">
+          <div class="my-experience_title">{{bean.title}}</div>
+          <div class="my-experience_sub-title">{{bean.subTitle}}</div>
+          <div class="my-experience_tenure">( {{bean.tenure}} )</div>
+          <ol class="my-experience_details mt-top-4 mt-sm-2 mb-bottom-4 mb-sm-3">
+            <li *ngFor="let detail of bean.details">
+              {{detail}}
+            </li>
+          </ol>
         </div>
+      </div>
     </section>
     <section class="px-lg-5 px-sm-2 degree-section">
-        <h2 class="text-white">Degrees and Achievements:</h2>
-        <div class="row g-0">
-            <div class="col-12 mt-lg-4 mt-sm-2" *ngFor="let bean of degrees">
-                <div class="degree-title pb-lg-2 pb-sm-1">
-                    {{bean.level}} in <span class="text-white">{{bean.in}}</span>
-                </div>
-                <div class="degree-institute">
-                    {{bean.from}}, {{bean.location}}.
-                </div>
-                <div class="degree-tenure">
-                    {{bean.tenure}} | Grade: {{bean.grade}}
-                </div>
-            </div>
+      <h2 class="text-white">Degrees and Achievements:</h2>
+      <div class="row g-0">
+        <div class="col-12 mt-lg-4 mt-sm-2 mt-3" *ngFor="let bean of degrees">
+          <div class="degree-title pb-lg-2 pb-sm-1">
+            {{bean.level}} in <span class="text-white">{{bean.in}}</span>
+          </div>
+          <div class="degree-institute">
+            {{bean.from}}, {{bean.location}}.
+          </div>
+          <div class="degree-tenure">
+            {{bean.tenure}} | Grade: {{bean.grade}}
+          </div>
         </div>
+      </div>
     </section>
-    <section class="px-4 py-lg-5 py-sm-3  achievements-section">
-        <div class="title">Achievements</div>
-        <div class="details">
-            <ul>
-                <li>Sports- I been titled District level player in Kabaddi.</li>
-                <li>I’ve been elected as the Student Council member in my college to showcase my leadership qualities.</li>
-            </ul>
-        </div>
+    <section class="px-lg-4 px-o py-lg-5 py-sm-3 py-4 achievements-section">
+      <div class="title">Achievements</div>
+      <div class="details">
+        <ul>
+          <li>Sports- I been titled District level player in Kabaddi.</li>
+          <li>I’ve been elected as the Student Council member in my college to showcase my leadership qualities.</li>
+        </ul>
+      </div>
     </section>
-    <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
-    <section class="px-lg-4 px-sm-0 what-can-I-do-section py-lg-5 py-sm-3">
+  </div>
+  <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
+  <section class="px-lg-4 px-sm-0 what-can-I-do-section py-lg-5 py-sm-3">
+    <div class="container-lg">
+      <div class="section-title">
+        <div class="sub-title">Secrets I have up my sleeve</div>
+        <div class="title">What Can I do</div>
+      </div>
+      <div class="what_can_row_main">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="ability">
+              <div class="ability_title">Understanding What Users Want :</div>
+              <div class="ability_details">Before I even begin designing, I make sure I know what users need and what the business aims to achieve. Sometimes, this means doing more research to be sure we really
+                understand the problem we're trying to solve.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <div class="experience">
+              <div class="experience_title">Design Tools:</div>
+              <div class="experience_details mt-lg-4 mt-sm-2">
+                <ul>
+                  <li>Figma</li>
+                  <li>Adobe Creative Cloud</li>
+                  <li>Html & css (Basics)</li>
+                  <li>articulate 360</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="ability">
+              <div class="ability_title">Making Interfaces Easy to Use:</div>
+              <div class="ability_details">I'm good at creating products that are easy to use and make sense for users. They should be enjoyable to use and help the business reach its goals.</div>
+              <div class="ability_title">Being a Supportive Teammate:</div>
+              <div class="ability_details">I believe that everyone on a team has a life outside of work and unique experiences that can be helpful. I like to listen to others and try to understand where they're coming
+                from. It's important to be empathetic and not make quick judgments.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <div class="experience">
+              <div class="experience_title">Experience:</div>
+              <div class="experience_details mt-lg-4 mt-sm-2">
+                <ul>
+                  <li>User Interviews</li>
+                  <li>Usability Testing</li>
+                  <li>Wireframes</li>
+                  <li>User Flow</li>
+                  <li>Lo-fi & Hi-fi Prototypes</li>
+                  <li>Package Design</li>
+                  <li>Branding</li>
+                  <li>Information Design</li>
+                  <li>Info Graphic Design</li>
+                  <li>Hi-fi Mockups</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="ability">
+              <div class="ability_title">Going the Extra Mile:</div>
+              <div class="ability_details">I like to have fun at work, and that keeps me motivated to give my best effort on every project. I see user experience (UX) principles in everything I do, whether it's a family
+                dinner or designing a mobile app for a customer.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <div class="experience">
+              <div class="experience_title">Discovery Methodologies:</div>
+              <div class="experience_details">
+                <ul>
+                  <li>Research</li>
+                  <li>Sketch</li>
+                  <li>Design Thinking Model</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
+  <section class="px-lg-4 px-sm-0 how-i-do-it py-lg-5 py-sm-2">
+    <div class="container-lg">
 
-        <div class="section-title">
-            <div class="sub-title">Secrets I have up my sleeve</div>
-            <div class="title">What Can I do</div>
-        </div>
-        <div class="what_can_row_main">
-          <div class="row">
-            <div class="col-md-12 col-lg-8">
-                <div class="ability">
-                    <div class="ability_title">Understanding What Users Want :</div>
-                    <div class="ability_details">Before I even begin designing, I make sure I know what users need and what the business aims to achieve. Sometimes, this means doing more research to be sure we really understand the problem we're trying to solve.</div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="experience">
-                    <div class="experience_title">Design Tools:</div>
-                    <div class="experience_details mt-lg-4 mt-sm-2">
-                        <ul>
-                            <li>Figma</li>
-                            <li>Adobe Creative Cloud</li>
-                            <li>Html & css (Basics)</li>
-                            <li>articulate 360</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-          <div class="row">
-            <div class="col-md-12 col-lg-8">
-                <div class="ability">
-                    <div class="ability_title">Making Interfaces Easy to Use:</div>
-                    <div class="ability_details">I'm good at creating products that are easy to use and make sense for users. They should be enjoyable to use and help the business reach its goals.</div>
-                    <div class="ability_title">Being a Supportive Teammate:</div>
-                    <div class="ability_details">I believe that everyone on a team has a life outside of work and unique experiences that can be helpful. I like to listen to others and try to understand where they're coming from. It's important to be empathetic and not make quick judgments.</div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="experience">
-                    <div class="experience_title">Experience:</div>
-                    <div class="experience_details mt-lg-4 mt-sm-2">
-                        <ul>
-                            <li>User Interviews</li>
-                            <li>Usability Testing</li>
-                            <li>Wireframes</li>
-                            <li>User Flow</li>
-                            <li>Lo-fi & Hi-fi Prototypes</li>
-                            <li>Package Design</li>
-                            <li>Branding</li>
-                            <li>Information Design</li>
-                            <li>Info Graphic Design</li>
-                            <li>Hi-fi Mockups</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-          <div class="row">
-            <div class="col-md-12 col-lg-8">
-                <div class="ability">
-                    <div class="ability_title">Going the Extra Mile:</div>
-                    <div class="ability_details">I like to have fun at work, and that keeps me motivated to give my best effort on every project. I see user experience (UX) principles in everything I do, whether it's a family dinner or designing a mobile app for a customer.</div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="experience">
-                    <div class="experience_title">Discovery Methodologies:</div>
-                    <div class="experience_details">
-                        <ul>
-                            <li>Research</li>
-                            <li>Sketch</li>
-                            <li>Design Thinking Model</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
-    <section class="px-lg-4 px-sm-0 how-i-do-it py-lg-5 py-sm-2">
-
-        <div></div>
-        <div class="section-title">
-            <div class="sub-title">My Creative Process</div>
-            <div class="title">How I do it?</div>
-        </div>
+      <div class="section-title">
+        <div class="sub-title">My Creative Process</div>
+        <div class="title">How I do it?</div>
+      </div>
 
 
-        <div class="the-basic-process">
-            <div class="the-basic-process_title pt-lg-4 pb-lg- py-sm-3 ">How Might We..?</div>
-            <div class="the-basic-process_details ">
-                When I begin a project, I use a process called <b>Design Thinking.</b> It involves understanding <b>people's needs</b> and using creative thinking to <b>solve their problems.</b> The goal is to come up with a <b>prototype</b> (a simplified version of the final product) that helps us
-                figure out <b>what needs to be improved,</b> make sure the way users will <b>interact with it makes sense,</b> and guide our <b>future work on the project.</b>
-            </div>
+      <div class="the-basic-process">
+        <div class="the-basic-process_title pt-lg-4 pb-lg- py-sm-3 ">How Might We..?</div>
+        <div class="the-basic-process_details ">
+          When I begin a project, I use a process called <b>Design Thinking.</b> It involves understanding <b>people's needs</b> and using creative thinking to <b>solve their problems.</b> The goal is to come up with a
+          <b>prototype</b> (a simplified version of the final product) that helps us
+          figure out <b>what needs to be improved,</b> make sure the way users will <b>interact with it makes sense,</b> and guide our <b>future work on the project.</b>
+        </div>
 
-            <div class="the-basic-process_title pt-lg-4 pb-lg- py-sm-3">The basic process</div>
-            <div class="the-basic-process_details">
-                I can user a variety of methodologies but, the most common process helps me <b>create solutions</b> through <b>rapid prototyping and user testing.</b> It’s divided into <b>six steps</b> to reach <b>clearly defined goals and deliverables</b> and <b>gain critical learnings,
-                quickly.</b>
-            </div>
+        <div class="the-basic-process_title pt-lg-4 pb-lg- py-sm-3">The basic process</div>
+        <div class="the-basic-process_details">
+          I can user a variety of methodologies but, the most common process helps me <b>create solutions</b> through <b>rapid prototyping and user testing.</b> It’s divided into <b>six steps</b> to reach <b>clearly
+          defined goals and deliverables</b> and <b>gain critical learnings,
+          quickly.</b>
         </div>
-        <div class="row process">
-            <div class="col-sm-12 col-md-6 col-lg-6" *ngFor="let process of basicProcess">
-                <div class="row py-lg-4 py-sm-4">
-                    <div class="col-lg-4 col-sm-12 process_image">
-                        <img style="width: 11.25rem;height: 11.25rem;flex-shrink: 0;" src="{{process.imageUrl}}" (error)="process.imageUrl = '/assets/images/coming-soon.jpg'" alt="featured-works-{{process.id}}">
-                    </div>
-                    <div class="col-lg-8 col-sm-12">
-                        <div class="process_title">{{process.id}} - {{process.title}}</div>
-                        <div class="process_details">{{process.details}}</div>
-                    </div>
-                </div>
+      </div>
+      <div class="row process">
+        <div class="col-sm-12 col-md-6 col-lg-6" *ngFor="let process of basicProcess">
+          <div class="row py-lg-4 py-sm-4 py-4">
+            <div class="col-lg-4 col-sm-12 process_image">
+              <img style="width: 11.25rem;height: 11.25rem;flex-shrink: 0;" src="{{process.imageUrl}}" (error)="process.imageUrl = '/assets/images/coming-soon.jpg'" alt="featured-works-{{process.id}}">
             </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="process_title">{{process.id}} - {{process.title}}</div>
+              <div class="process_details">{{process.details}}</div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 

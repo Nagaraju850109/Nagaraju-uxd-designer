@@ -1,7 +1,8 @@
 <section class="home_banner_sec">
-  <div class="container">
+  <div class="container-lg">
+    <div class="banner_cnt_manin">
     <div class="row">
-      <div class="col-lg-8 col-md-6 col-sm-12">
+      <div class="col-lg-8 col-sm-12">
         <div class="home_banner_txt">
           <div class="home_banner_subtitle">Hey, there!</div>
           <h1>
@@ -11,73 +12,107 @@
           <h6>I’m Currently Pursuing my master's degree at <b class="text-orange">Touro University</b> in <b class="text-orange">Web and Multimedia design.</b></h6>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="home_banner_image">
-          <div class="home_profile_img">
-            <img src="/assets/images/profile_image_full.jpg" alt="home_profileimg">
-          </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="home_banner_img_main">
+          <div class="home_banner_image">
+            <div class="home_profile_img">
+              <img src="/assets/images/profile_image_full.png" alt="home_profileimg" class="img-fluid">
+            </div>
+        </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </section>
 <section class="featured-works-container">
-  <div class="d-flex justify-content-center">
-    <div class="section-title">
-      <div class="sub-title">Projects that i have done</div>
-      <div class="title">Featured Work</div>
+  <div class="container-lg">
+    <div class="d-flex justify-content-center">
+      <div class="section-title">
+        <div class="sub-title">Projects that i have done</div>
+        <div class="title">Featured Work</div>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="featured-work col-12 my-5" *ngFor="let work of featuredWorks">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 d-flex justify-content-center">
-          <div class="image-container">
-            <img src="{{work.imageUrl}}" (error)="work.imageUrl = '/assets/images/coming-soon.jpg'" alt="featured-works-{{work.id}}">
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 ">
-          <div class="details-container mt-5">
-            <div class="title">{{work.title}}</div>
-            <div class="subtitle">{{work.subTitle}}</div>
-            <div class="designation-container">
-              <span class="designation">{{work.jobTitle}}</span> | <span class="tenure">{{work.tenure}}</span>
+    <div class="row">
+      <div class="featured-work col-12 my-5" *ngFor="let work of featuredWorks">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+            <div class="image-container">
+              <img src="{{work.imageUrl}}" (error)="work.imageUrl = '/assets/images/coming-soon.jpg'" alt="featured-works-{{work.id}}" class="img-fluid">
             </div>
-            <div class="comments">{{work.description}}</div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 ">
+            <div class="details-container">
+              <div class="details_cnt_number">{{work.id | number :'2.0'}}</div>
+              <div class="title">{{work.title}}</div>
+              <div class="subtitle">{{work.subTitle}}</div>
+              <div class="designation-container">
+                <span class="designation">{{work.jobTitle}}</span> | <span class="tenure">{{work.tenure}}</span>
+              </div>
+              <div class="comments">{{work.description}}</div>
+              <button href="#." class="view-case_study_btn">
+                View Case Study
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-lg view-more" (click)="routeToWork()">View More</button>
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-lg view-more" (click)="routeToWork()">View More</button>
+    </div>
   </div>
-
 
 </section>
 
 
-<section class="testimonial-container p-3">
-
-  <div class="d-flex justify-content-center">
-    <div class="section-title">
-      <div class="sub-title">What people say about me</div>
-      <div class="title">Testimonials</div>
+<section class="testimonial-container">
+  <div class="container-lg">
+    <div class="d-flex justify-content-center">
+      <div class="section-title">
+        <div class="sub-title">What people say about me</div>
+        <div class="title">Testimonials</div>
+      </div>
+    </div>
+    <div class="testimonial_row_main">
+      <div class="row">
+      <div class="col-lg-6 col-sm-12 col-12 d-flex align-items-stretch" *ngFor="let testimonial of testimonials;">
+        <div class="testimonial">
+          <p class="comments">
+            {{testimonial.comments}}
+          </p>
+          <div class="name">{{testimonial.name}}</div>
+          <div class="position">
+            <span>{{testimonial.position}}</span>
+            <span>{{testimonial.companyName && testimonial.companyName.length > 0 ? ' at ' + testimonial.companyName : ''}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
-
-  <div class="row g-0">
-    <div class="col-6" *ngFor="let testimonial of testimonials;">
-      <div class="testimonial">
-        <p class="comments">
-          {{testimonial.comments}}
-        </p>
-        <div class="name">{{testimonial.name}}</div>
-        <div class="position">
-          <span>{{testimonial.position}}</span>
-          <span>{{testimonial.companyName && testimonial.companyName.length > 0 ? ' at ' + testimonial.companyName : ''}}</span>
+</section>
+<section class="home_about">
+  <div class="container-lg">
+    <div class="home_about_main_title section-title">
+      <div class="sub-title">Want to know</div>
+      <h2>About me</h2>
+    </div>
+    <div class="home_about_three_col">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h3>My Experience</h3>
+          <p>SOME FACTS AND WHO I AM</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h3>What I can do</h3>
+          <p>SECRETS I HAVE UP MY SLEEVE</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h3>How i do it</h3>
+          <p>MY CREATIVE PROCESS</p>
         </div>
       </div>
     </div>

@@ -11,6 +11,9 @@ body {
 a {
   text-decoration: unset;
 }
+a:hover { color: #F28705 !important; }
+a.text-white:hover { text-decoration: underline  }
+
 
 .section-divider {
   width: 100%;
