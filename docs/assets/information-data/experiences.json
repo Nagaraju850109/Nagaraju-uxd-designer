@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "title": "Product designer.",
+    "subTitle": "Mars by GHC",
+    "tenure": "May 2021 - December 2021",
+    "details": [
+      "Set design requirements based on information from internal teams and user research.",
+      "Use data collected from research, user testing, and market analysis to create truly User- centric designs",
+      "Illustrate and communicate complex design solutions across uses cases by creating process flows, wireframes, prototypes, and high-fidelity mock-ups.",
+      "Watch consumer trends to identify desirable product traits",
+      "Modify products in accordance with feedback from users and test groups.",
+      "Maintaining a design library for reference purposes",
+      "Sharing new design ideas and methodologies with management",
+      "Always keep an eye on the competitors and give better than them."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Associate Graphic Designer & Storyboard artist.",
+    "subTitle": "Kovida ltd",
+    "tenure": "Oct 2020 - March 2021",
+    "details": [
+      "Study design briefs and determine requirements",
+      "Conceptualize visuals based on requirements",
+      "Prepare rough drafts and present ideas",
+      "Develop illustrations, logos, and other designs using software or by hand",
+      "Use the appropriate colors and layouts for each graphic",
+      "Work with copywriters and creative director to produce the final design",
+      "Test graphics across various media",
+      "Amend designs after feedback",
+      "Ensure final graphics and layouts are visually appealing and on-brand"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Associate Graphic Designer.",
+    "subTitle": "BBD",
+    "tenure": "Oct 2019 -Oct 2020",
+    "details": [
+      "Create and design various materials for print and digital collateral",
+      "Ensure projects are completed with high quality and on schedule",
+      "Establish creative direction for the company as well as brand guidelines",
+      "Prioritize and manage multiple projects within design specifications",
+      "Perform retouching and manipulation of images",
+      "Work with a wide range of media and use graphic design software"
+    ]
+  }
+]
