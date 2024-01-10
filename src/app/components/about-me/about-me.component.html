@@ -36,7 +36,7 @@
     </div>
   </section>
 
-  <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
+  <img class="section-divider" src="assets/images/divider.svg" alt="divider">
   <div class="container-lg">
     <section class="px-4 my-experiences-section pt-lg-5 pt-sm-3 pb-5 pb-sm-3">
 
@@ -84,7 +84,7 @@
       </div>
     </section>
   </div>
-  <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
+  <img class="section-divider" src="assets/images/divider.svg" alt="divider">
   <section class="px-lg-4 px-sm-0 what-can-I-do-section py-lg-5 py-sm-3">
     <div class="container-lg">
       <div class="section-title">
@@ -171,7 +171,7 @@
       </div>
     </div>
   </section>
-  <img class="section-divider" src="/assets/images/divider.svg" alt="divider">
+  <img class="section-divider" src="assets/images/divider.svg" alt="divider">
   <section class="px-lg-4 px-sm-0 how-i-do-it py-lg-5 py-sm-2">
     <div class="container-lg">
 
@@ -200,7 +200,7 @@
         <div class="col-sm-12 col-md-6 col-lg-6" *ngFor="let process of basicProcess">
           <div class="row py-lg-4 py-sm-4 py-4">
             <div class="col-lg-4 col-sm-12 process_image">
-              <img style="width: 11.25rem;height: 11.25rem;flex-shrink: 0;" src="{{process.imageUrl}}" (error)="process.imageUrl = '/assets/images/coming-soon.jpg'" alt="featured-works-{{process.id}}">
+              <img style="width: 11.25rem;height: 11.25rem;flex-shrink: 0;" src="{{process.imageUrl}}" (error)="process.imageUrl = 'assets/images/coming-soon.jpg'" alt="featured-works-{{process.id}}">
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="process_title">{{process.id}} - {{process.title}}</div>

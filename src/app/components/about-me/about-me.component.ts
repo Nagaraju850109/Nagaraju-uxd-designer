@@ -17,9 +17,9 @@ export class AboutMeComponent {
     experiences: Array<Experience> = [];
     degrees: Array<Degree> = [];
     basicProcess: Array<BasicProcess> = [];
-    private experiencesURL: string = '/assets/information-data/experiences.json';
-    private degreesURL: string = '/assets/information-data/degrees.json';
-    private basicProcessURL: string = '/assets/information-data/basic-process.json';
+    private experiencesURL: string = 'assets/information-data/experiences.json';
+    private degreesURL: string = 'assets/information-data/degrees.json';
+    private basicProcessURL: string = 'assets/information-data/basic-process.json';
 
     constructor(private http: HttpClient) {
         this.loadExperiences();

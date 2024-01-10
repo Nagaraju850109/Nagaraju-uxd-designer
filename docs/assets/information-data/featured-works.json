@@ -6,7 +6,7 @@
     "jobTitle": "Package Design",
     "tenure": "May 2021 - Dec 2021",
     "description": "\"Based on team insights and user research, design user-centric solutions using data, prototypes, and mock-ups. Monitor trends, refine products, and outdo competitors.\"",
-    "imageUrl": "/assets/images/featured-work/1.jpeg",
+    "imageUrl": "assets/images/featured-work/1.jpeg",
     "caseStudyURL": ""
   },
   {
@@ -16,7 +16,7 @@
     "jobTitle": "Course Design",
     "tenure": "August 2023",
     "description": "\"An instructional design project tailored for aspiring junior designers seeking a comprehensive understanding of the end-to-end brand development process.\"",
-    "imageUrl": "/assets/images/featured-work/2.jpeg",
+    "imageUrl": "assets/images/featured-work/2.jpeg",
     "caseStudyURL": ""
   },
   {
@@ -26,7 +26,7 @@
     "jobTitle": "UI/UX Design",
     "tenure": "Oct 2023",
     "description": "\"TerraTea embodies the synergy of wholesomeness and nature, offering a\nmindful pause within our hectic days through\nits organic offerings.\"",
-    "imageUrl": "/assets/images/featured-work/3.jpeg",
+    "imageUrl": "assets/images/featured-work/3.jpeg",
     "caseStudyURL": ""
   },
   {
@@ -36,7 +36,7 @@
     "jobTitle": "Brand design Thesis",
     "tenure": "Nov 2023",
     "description": "\"Exploring the 30-year journey of SGT Rice, a brand rooted in collaboration and quality, this thesis delves into rice production complexities, emphasizing industry challenges and unwavering commitment to health and quality.\"",
-    "imageUrl": "/assets/images/featured-work/4.jpeg",
+    "imageUrl": "assets/images/featured-work/4.jpeg",
     "caseStudyURL": ""
   }
 ]

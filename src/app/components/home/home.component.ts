@@ -16,8 +16,8 @@ export class HomeComponent {
 
     testimonials: Array<Testimonial> = [];
     featuredWorks: Array<FeaturedWork> = [];
-    private testimonialsURL: string = '/assets/information-data/testimonials.json';
-    private featuredWorksURL: string = '/assets/information-data/featured-works.json';
+    private testimonialsURL: string = 'assets/information-data/testimonials.json';
+    private featuredWorksURL: string = 'assets/information-data/featured-works.json';
 
     constructor(private http: HttpClient, private router: Router) {
         this.loadFeaturedWorks();

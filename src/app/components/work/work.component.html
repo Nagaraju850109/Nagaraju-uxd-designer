@@ -5,7 +5,7 @@
       <h2>Featured Work</h2>
     </div>
     <div class="work_title_border">
-      <img  src="/assets/images/divider.svg" alt="divider" class="section-divider">
+      <img  src="assets/images/divider.svg" alt="divider" class="section-divider">
     </div>
   </div>
 </section>
@@ -33,7 +33,7 @@
                         <div class="row case-studies">
                             <div class="col-sm-12 col-md-6 col-lg-4 my-4" *ngFor="let caseStudy of caseStudiesData">
                                 <div class="image-container d-inline-block">
-                                    <img src="{{caseStudy.imageUrl}}" (error)="caseStudy.imageUrl = '/assets/images/coming-soon.jpg'" alt="case-studies-{{caseStudy.id}}"/>
+                                    <img src="{{caseStudy.imageUrl}}" (error)="caseStudy.imageUrl = 'assets/images/coming-soon.jpg'" alt="case-studies-{{caseStudy.id}}"/>
                                 </div>
                                 <div class="case_title_txt">
                                     <h6>{{caseStudy.title}}</h6>
@@ -50,7 +50,7 @@
                         <div class="row gallery-data">
                             <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center my-5" *ngFor="let bean of galleryData">
                                 <div>
-                                    <img src="{{bean.imageUrl}}" (error)="bean.imageUrl = '/assets/images/coming-soon.jpg'" alt="gallery-{{bean.id}}"/>
+                                    <img src="{{bean.imageUrl}}" (error)="bean.imageUrl = 'assets/images/coming-soon.jpg'" alt="gallery-{{bean.id}}"/>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                         <div class="row case-studies">
                             <div class="col-sm-12 col-md-6 col-lg-4 my-4" *ngFor="let caseStudy of caseStudiesData">
                                 <div class="image-container d-inline-block">
-                                    <img src="{{caseStudy.imageUrl}}" (error)="caseStudy.imageUrl = '/assets/images/coming-soon.jpg'" alt="case-studies-{{caseStudy.id}}"/>
+                                    <img src="{{caseStudy.imageUrl}}" (error)="caseStudy.imageUrl = 'assets/images/coming-soon.jpg'" alt="case-studies-{{caseStudy.id}}"/>
                                 </div>
                                 <div class="case_title_txt">
                                     <h6>{{caseStudy.title}}</h6>
@@ -98,7 +98,7 @@
                         <div class="row gallery-data">
                             <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center my-5" *ngFor="let bean of galleryData">
                                 <div>
-                                    <img src="{{bean.imageUrl}}" (error)="bean.imageUrl = '/assets/images/coming-soon.jpg'" alt="gallery-{{bean.id}}"/>
+                                    <img src="{{bean.imageUrl}}" (error)="bean.imageUrl = 'assets/images/coming-soon.jpg'" alt="gallery-{{bean.id}}"/>
                                 </div>
                             </div>
                         </div>

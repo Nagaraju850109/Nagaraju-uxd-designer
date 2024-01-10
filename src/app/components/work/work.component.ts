@@ -20,8 +20,8 @@ export class WorkComponent implements OnInit {
     caseStudiesData: Array<CaseStudy> = [];
     galleryData: Array<{ id: number, imageUrl: string }> = [];
     protected readonly console = console;
-    private caseStudiesDataURL: string = '/assets/information-data/case-studies.json';
-    private galleryDataURL: string = '/assets/information-data/gallery-images.json';
+    private caseStudiesDataURL: string = 'assets/information-data/case-studies.json';
+    private galleryDataURL: string = 'assets/information-data/gallery-images.json';
 
     constructor(private http: HttpClient, private activeRoute: ActivatedRoute) {
         this.loadCaseStudiesData();
