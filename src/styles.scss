@@ -44,7 +44,7 @@ a.text-white:hover { text-decoration: underline  }
 
     &::before {
       margin-right: 8px;
-      content: url('/assets/images/section-sub-title-prefix.svg');
+      content: url('./assets/images/section-sub-title-prefix.svg');
       display: inline-block;
     }
   }
