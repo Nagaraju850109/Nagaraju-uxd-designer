@@ -3,12 +3,12 @@ import {CommonModule, NgIf} from '@angular/common';
 import {CaseStudy} from "../../models/case-study";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {NgbDropdownModule, NgbNav, NgbNavContent, NgbNavItem, NgbNavOutlet} from "@ng-bootstrap/ng-bootstrap";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, RouterLink} from "@angular/router";
 
 @Component({
     selector: 'app-work',
     standalone: true,
-    imports: [CommonModule, HttpClientModule, NgIf, NgbDropdownModule, NgbNav, NgbNavItem, NgbNavOutlet, NgbNavContent],
+    imports: [CommonModule, HttpClientModule, NgIf, NgbDropdownModule, NgbNav, NgbNavItem, NgbNavOutlet, NgbNavContent, RouterLink],
     templateUrl: './work.component.html',
     styleUrl: './work.component.scss'
 })
