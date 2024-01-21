@@ -57,9 +57,4 @@ export class WorkComponent implements OnInit {
         });
     }
 
-  openInNewTab = (url: string): void => {
-    if (url.trim().length > 0) {
-      window.open(url, '_blank');
-    }
-  }
 }
