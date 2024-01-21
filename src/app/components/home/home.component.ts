@@ -3,12 +3,12 @@ import {CommonModule, NgForOf, NgIf} from '@angular/common';
 import {Testimonial} from "../../models/testimonial";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {FeaturedWork} from "../../models/featured-work";
-import {Router} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 
 @Component({
     selector: 'app-home',
     standalone: true,
-    imports: [CommonModule, HttpClientModule, NgForOf, NgIf],
+  imports: [CommonModule, HttpClientModule, NgForOf, NgIf, RouterLink],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
 })

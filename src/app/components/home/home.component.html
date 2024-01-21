@@ -7,7 +7,7 @@
           <div class="home_banner_subtitle">Hey, there!</div>
           <h1>
             I’m a <b class="text-orange">UI/UX & Package Designer </b>based in the <b class="text-orange">New Jersey Area</b>.
-            <span>I create <b class="text-orange">thoughtful experiences </b>that drive <b class="text-orange"> customer engagement</b> and business results while<b> having fun</b>!</span>
+            <span>I create <b class="text-orange">thoughtful experiences </b>that drive <b class="text-orange"> customer engagement</b> and business results while<b class="text-orange"> having fun</b>!</span>
           </h1>
           <h6>I’m Currently Pursuing my master's degree at <b class="text-orange">Touro University</b> in <b class="text-orange">Web and Multimedia design.</b></h6>
         </div>
@@ -37,7 +37,7 @@
       <div class="featured-work col-12 my-5" *ngFor="let work of featuredWorks">
         <div class="row">
           <div class="col-sm-12 col-md-6 d-flex justify-content-center">
-            <div class="image-container">
+            <div class="image-container" routerLink="work">
               <img src="{{work.imageUrl}}" (error)="work.imageUrl = 'assets/images/coming-soon.jpg'" alt="featured-works-{{work.id}}" class="img-fluid">
             </div>
           </div>
@@ -45,13 +45,13 @@
           <div class="col-sm-12 col-md-6 ">
             <div class="details-container">
               <div class="details_cnt_number">{{work.id | number :'2.0'}}</div>
-              <div class="title">{{work.title}}</div>
+              <div class="title" >{{work.title}}</div>
               <div class="subtitle">{{work.subTitle}}</div>
               <div class="designation-container">
                 <span class="designation">{{work.jobTitle}}</span> | <span class="tenure">{{work.tenure}}</span>
               </div>
               <div class="comments">{{work.description}}</div>
-              <button href="#." class="view-case_study_btn">
+              <button routerLink="work" class="view-case_study_btn">
                 View Case Study
               </button>
             </div>
@@ -102,18 +102,18 @@
     </div>
     <div class="home_about_three_col">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <a routerLink="about" class="col-lg-4 col-md-6 col-sm-12">
           <h3>My Experience</h3>
           <p>SOME FACTS AND WHO I AM</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        </a>
+        <a routerLink="about" class="col-lg-4 col-md-6 col-sm-12">
           <h3>What I can do</h3>
           <p>SECRETS I HAVE UP MY SLEEVE</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        </a>
+        <a routerLink="about" class="col-lg-4 col-md-6 col-sm-12">
           <h3>How i do it</h3>
           <p>MY CREATIVE PROCESS</p>
-        </div>
+        </a>
       </div>
     </div>
   </div>

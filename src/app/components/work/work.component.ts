@@ -19,7 +19,6 @@ export class WorkComponent implements OnInit {
     contentSwitch: boolean = true;
     caseStudiesData: Array<CaseStudy> = [];
     galleryData: Array<{ id: number, imageUrl: string }> = [];
-    protected readonly console = console;
     private caseStudiesDataURL: string = 'assets/information-data/case-studies.json';
     private galleryDataURL: string = 'assets/information-data/gallery-images.json';
 
@@ -46,6 +45,7 @@ export class WorkComponent implements OnInit {
                 caseStudy.title = x.title ?? '';
                 caseStudy.subTitle = x.subTitle ?? '';
                 caseStudy.tenure = x.tenure ?? '';
+                caseStudy.referenceLink= x.referenceLink ?? '';
                 return caseStudy;
             });
         });
@@ -56,4 +56,10 @@ export class WorkComponent implements OnInit {
             this.galleryData = res.map((x: any): { id: number, imageUrl: string } => ({id: x.id ?? -1, imageUrl: x.imageUrl ?? ''}));
         });
     }
+
+  openInNewTab = (url: string): void => {
+    if (url.trim().length > 0) {
+      window.open(url, '_blank');
+    }
+  }
 }

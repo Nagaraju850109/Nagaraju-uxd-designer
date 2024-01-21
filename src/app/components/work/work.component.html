@@ -31,7 +31,8 @@
                 <li ngbNavItem="case-studies">
                     <ng-template ngbNavContent>
                         <div class="row case-studies">
-                            <div class="col-sm-12 col-md-6 col-lg-4 my-4" *ngFor="let caseStudy of caseStudiesData">
+                            <div class="col-sm-12 col-md-6 col-lg-4 my-4" *ngFor="let caseStudy of caseStudiesData" >
+                              <a [href]="caseStudy.referenceLink.trim().length > 0 ? caseStudy.referenceLink.trim() : 'http://www.google.com' " target="_blank">
                                 <div class="image-container d-inline-block">
                                     <img src="{{caseStudy.imageUrl}}" (error)="caseStudy.imageUrl = 'assets/images/coming-soon.jpg'" alt="case-studies-{{caseStudy.id}}"/>
                                 </div>
@@ -41,6 +42,7 @@
                                         <span>{{caseStudy.subTitle}}</span> | <span>{{caseStudy.tenure}}</span>
                                     </div>
                                 </div>
+                              </a>
                             </div>
                         </div>
                     </ng-template>

@@ -5,4 +5,5 @@ export class CaseStudy {
   subTitle: string = '';
   tenure: string = '';
   imageUrl: string = '';
+  referenceLink: string= "";
 }

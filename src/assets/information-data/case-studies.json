@@ -4,7 +4,8 @@
     "imageUrl": "assets/images/featured-work/1.jpeg",
     "title": "Mars by GHC",
     "subTitle": "Package Design",
-    "tenure": "2023"
+    "tenure": "2023",
+    "referenceLink": ""
   },
   {
     "id": 2,
@@ -46,7 +47,8 @@
     "imageUrl": "assets/images/featured-work/7.png",
     "title": "Airtravel Website Redesign",
     "subTitle": "Package Design",
-    "tenure": "2023"
+    "tenure": "2023",
+    "referenceLink": "https://www.behance.net/gallery/187763473/Airtravel"
   },
   {
     "id": 8,
